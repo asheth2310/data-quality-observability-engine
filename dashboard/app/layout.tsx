@@ -24,6 +24,19 @@ export default function RootLayout({
           <div className="flex-1 flex flex-col min-w-0">
             <Topbar />
             <main className="flex-1 p-6 overflow-x-hidden">{children}</main>
+            <footer className="border-t border-border px-6 py-3 text-center">
+              <p className="text-xs text-text-secondary">
+                Backend powered by Python + FastAPI · Check out the source on{" "}
+                <a
+                  href="https://github.com/asheth2310/data-quality-observability-engine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline transition-colors duration-200"
+                >
+                  GitHub
+                </a>
+              </p>
+            </footer>
           </div>
         </div>
       </body>
